@@ -6,13 +6,12 @@ def join_nested_strings(src)
     while element < src[row].count do
       if src[row][element].class == String
         string << src[row][element]
-        string.join(" ")
       end
       element += 1
     end
     row += 1
   end
-  string
+  string.join(" ")
   # src will be an Array of Arrays of Strings and Integers
   # Combine all Strings present in the AoA into a single value and return it
 end
